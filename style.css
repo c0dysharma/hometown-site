@@ -1,0 +1,120 @@
+/*
+Palette: https://coolors.co/cdc1cd-4c4272-fffef9-f6ebc2-201c37-f4eef0
+*/
+
+body {
+  margin: 0;
+  text-align: center;
+  font-family: 'Signika Negative', sans-serif;
+}
+
+img {
+  width: 100px;
+}
+
+h1, h2, h3, h4, p{
+  margin: 0;
+  padding: 0;
+}
+
+.hero-section{
+  background-image: url('images/delhi-main2.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  width: 100%;
+  font-weight: 700;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: end;
+}
+
+#hero-heading{
+  margin-top: 80px;
+  background-color: #4C4272;
+  color: #F1FAEE;
+  padding: 3px 12px;
+  border-radius: 10px;
+}
+
+#hero-paragraph{
+  margin-top: 16px;
+  background-color: #201C37;
+  color: #F1FAEE;
+  padding: 3px 12px;
+  border-radius: 10px;
+  width: 450px;
+}
+
+.activity-section{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+
+  padding: 58px 0;
+  background-color: #FAF1E4;
+}
+
+.activity-model{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ac-img{
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+.activity-model h4{
+  margin: 20px;
+  color: #4C4272;
+  font-weight: 700;
+}
+
+.activity-model p{
+  width: 250px;
+  color: #201C37;
+}
+
+.guide-section{
+  padding: 50px 160px;
+}
+
+.guide-card{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 auto;
+
+  border-radius: 10px;
+  background-color: #9B94B6;
+  padding: 23px 0; 
+  width: 500px;
+}
+
+.guide-details{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 200px;
+}
+
+.guide-details h3, h4{
+  color: #4C4272;
+  font-weight: 700;
+}
+
+.guide-details p{
+  padding: 14px 0;
+  font-style: italic;
+  color: #2C293D;
+}
+
+.guide-section img{
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 1px 0px 3px #2C293D;
+}
