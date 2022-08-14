@@ -152,6 +152,7 @@ h1, h2, h3, h4, p{
   .guide-card {
     flex-direction: column-reverse;
     align-items: center;
+    width: 80%;
   }
 
   .guide-section img {
