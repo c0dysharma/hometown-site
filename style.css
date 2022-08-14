@@ -8,22 +8,27 @@ body {
   font-family: 'Signika Negative', sans-serif;
 }
 
-img {
-  width: 100px;
-}
 
 h1, h2, h3, h4, p{
   margin: 0;
   padding: 0;
 }
 
+.container{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .hero-section{
   background-image: url('images/delhi-main2.jpg');
   background-size: cover;
-  background-position: center;
-  height: 600px;
+  background-position:center;
   width: 100%;
   font-weight: 700;
+  padding-top: 80px;
+  padding-bottom: 200px;
+  text-align: right;
 
   display: flex;
   flex-direction: column;
@@ -32,20 +37,23 @@ h1, h2, h3, h4, p{
 }
 
 #hero-heading{
-  margin-top: 80px;
+  font-size: 2rem;
   background-color: #4C4272;
   color: #F1FAEE;
-  padding: 3px 12px;
-  border-radius: 10px;
+  padding: 0.2em 0.5em;
+  border-radius: 0.2em;
+  width: 150px;
 }
 
 #hero-paragraph{
   margin-top: 16px;
+  font-size: 1.5rem;
   background-color: #201C37;
   color: #F1FAEE;
-  padding: 3px 12px;
-  border-radius: 10px;
-  width: 450px;
+  padding: 0.2em 0.5em;
+  border-radius: 0.2em;
+  width: 70%;
+  max-width: 450px;
 }
 
 .activity-section{
@@ -61,6 +69,7 @@ h1, h2, h3, h4, p{
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 30%;
 }
 
 .ac-img{
@@ -76,30 +85,31 @@ h1, h2, h3, h4, p{
 }
 
 .activity-model p{
-  width: 250px;
+  width: 100%;
   color: #201C37;
 }
 
 .guide-section{
-  padding: 50px 160px;
+  box-sizing: border-box;
 }
 
 .guide-card{
   display: flex;
   justify-content: space-evenly;
-  margin: 0 auto;
+  align-items: stretch;
 
+  margin: 3em auto;
   border-radius: 10px;
   background-color: #9B94B6;
   padding: 23px 0; 
-  width: 500px;
+  width: 50%;
 }
 
 .guide-details{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 200px;
+  width: 40%;
 }
 
 .guide-details h3, h4{
@@ -108,13 +118,50 @@ h1, h2, h3, h4, p{
 }
 
 .guide-details p{
-  padding: 14px 0;
   font-style: italic;
   color: #2C293D;
 }
 
 .guide-section img{
-  width: 200px;
+  width: 40%;
   border-radius: 10px;
   box-shadow: 1px 0px 3px #2C293D;
+}
+
+@media (max-width:600px) {
+  .hero-section{
+    align-items: center;
+    text-align: center;
+  }
+
+  .activity-section{
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .activity-model{
+    width: 80%;
+    margin-bottom: 2em;
+  }
+
+  .activity-model p {
+    width: 100%;
+  }
+
+  .guide-card {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .guide-section img {
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 1px 0px 3px #2C293D;
+    margin-bottom: 1.5em;
+  }
+
+  .guide-details{
+    width: 80%;
+  }
 }
